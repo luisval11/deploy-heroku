@@ -1,0 +1,23 @@
+<h1>Update contact</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{contact.name}}</td>
+            <td><input class="form-control" [(ngModel)]="contact.email" /></td>
+            <td><input class="form-control" [(ngModel)]="contact.phone" /></td>
+            <td>
+                <button class="btn btn-primary" (click)="saveContact()">Update</button>
+                &nbsp;&nbsp;
+                <button class="btn btn-secondary" (click)="goBack()">Cancel</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
